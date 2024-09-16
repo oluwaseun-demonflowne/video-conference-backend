@@ -1,0 +1,23 @@
+{
+    "ts-node": {
+        "require": ["tsconfig-paths/register"]
+    },
+    "compilerOptions": {
+        "target": "ES2016",
+        "module": "CommonJS",
+        "outDir": "dist",
+        "rootDir": "src",
+        "noUnusedParameters": true,
+        "noUnusedLocals": true,
+        "strict": true,
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "baseUrl": "./",
+        "forceConsistentCasingInFileNames": true,
+        "paths": { "$/*": ["./src/*"] }
+        // "noUnusedLocals": true
+    },
+    "include": ["./src/**/*.ts", "eslint.config.cjs", ".drizzle.config.ts"],
+    "exclude": ["node_modules", "dist"]
+}
